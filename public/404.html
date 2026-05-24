@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Redirect 404s back to index for SPA routing
+      sessionStorage.setItem('redirect', location.pathname + location.search);
+    </script>
+    <meta http-equiv="refresh" content="0;URL='./'">
+  </head>
+</html>
